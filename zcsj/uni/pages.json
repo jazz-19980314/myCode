@@ -1,0 +1,106 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [
+		{
+		    "path" : "pages/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "公司信息录入"
+			}
+		},
+		{
+			"path": "pages/index/address",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+        ,{
+            "path" : "pages/index/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/target",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "公司指标",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/policy",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "相关政策",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/update",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑公司信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/policyDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "项目相关公司",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "政策详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#0D80F7",
+		"borderStyle": "black",
+		"backgroundColor": "#FCFCFC",
+		"iconWidth":"10px",
+		"list": [{
+			"pagePath": "pages/index/list",
+			"iconPath": "static/tabbar/1-001.png",
+			"selectedIconPath": "static/tabbar/1-002.png",
+			"text": "公司列表"
+		}, {
+			"pagePath": "pages/index/address",
+			"iconPath": "static/tabbar/5-001.png",
+			"selectedIconPath": "static/tabbar/5-002.png",
+			"text": "个人中心"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "卓创仕佳",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

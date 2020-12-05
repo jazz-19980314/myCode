@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "编辑公司信息",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "pickers": "/components/ming-picker/ming-picker",
+    "bpickers": "/components/ming-picker/bussise-picker"
+  }
+}
