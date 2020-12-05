@@ -1,0 +1,145 @@
+<!--
+  - Copyright (C) 2018-2019
+  - All rights reserved, Designed By www.joolun.com
+  - 注意：
+  - 本软件为www.joolun.com开发研制，未经购买不得使用
+  - 购买后可获得全部源代码（禁止转卖、分享、上传到码云、github等开源平台）
+  - 一经发现盗用、分享等行为，将追究法律责任，后果自负
+-->
+<view class="flex justify-end">
+	<button class="cu-btn round line-green margin-right" open-type="contact" bindcontact="handleContact" wx:if="{{contact}}">
+		<view class="cuIcon-servicefill"></view>
+		客服
+	</button>
+	<button class="cu-btn round line-grey margin-right" bindtap="orderDel" loading="{{loading}}" disabled="{{loading}}"
+	 type="" wx:if="{{orderInfo.status == '5' && orderInfo.isPay == '0'}}">
+		删除订单
+	</button>
+	<button class="cu-btn round line-grey margin-right" bindtap="orderCancel" loading="{{loading}}" disabled="{{loading}}"
+	 type="" wx:if="{{orderInfo.isPay == '0' && (orderInfo.status== '8' || orderInfo.status== '0')}}">
+		取消订单
+	</button>
+	<button class="cu-btn round line-grey margin-right" bindtap="orderLogistics" loading="{{loading}}" disabled="{{loading}}"
+	 type="" wx:if="{{orderInfo.deliveryWay == '1' && (orderInfo.status == '2' || orderInfo.status == '3' || orderInfo.status == '4')}}">
+		查看物流
+	</button>
+	<button class="cu-btn round line-red margin-right" bindtap="urgeOrder" loading="{{loading}}" disabled="{{loading}}"
+	 type="" wx:if="{{orderInfo.status == '1'}}">
+		提醒卖家发货
+	</button>
+	<button class="cu-btn round line-red margin-right" bindtap="unifiedOrder" loading="{{loading}}" data-target="Modal"
+	 disabled="{{loading}}" type="" wx:if="{{orderInfo.isPay == '0' && orderInfo.status != '0' &&  orderInfo.status != '5'}}">
+		付款
+	</button>
+	<!-- <button class="cu-btn round line-red margin-right" bindtap="unifiedOrder" loading="{{loading}}" data-target="Modal"
+  disabled="{{loading}}" type="" wx:if="{{orderInfo.isPay == '0' && orderInfo.status != '0' &&  orderInfo.status != '5'}}">
+    下载合同
+  </button> -->
+	<button class="cu-btn round line-red margin-right" bindtap="orderReceive" loading="{{loading}}" disabled="{{loading}}"
+	 type="" wx:if="{{orderInfo.status == '2'}}">
+		确认收货
+	</button>
+	<button class="cu-btn round line-red margin-right" bindtap="orderAppraise" loading="{{loading}}" disabled="{{loading}}"
+	 type="" wx:if="{{orderInfo.status == '3' && orderInfo.appraisesStatus == '0'}}">
+		评价
+	</button>
+	<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+		<view class="cu-dialog" style="height: 80vh;overflow: auto;top: 50rpx;">
+			<view class="cu-bar bg-white justify-end" style="background:linear-gradient(180deg,rgba(244,107,51,1) 0%,rgba(230,57,23,1) 100%);color: #fff;">
+				<view class="content">结款详情</view>
+				<view class="action" bindtap="hideModal">
+					<text class="cuIcon-close text-white text-xls" style="font-size: 40rpx;"></text>
+				</view>
+			</view>
+			<view class="" style="padding: 0rpx 10rpx;">
+				<view class="cu-card" style="background-color: #fff;">
+					<view class="" wx:for="{{hitCount}}" wx:key="index" style="padding-top: 40rpx;background-color: rgba(244,245,246,1);">
+						<view class="flex margin-sm">
+							<text class="flex-sub text-left">更新时间</text>
+							<view class="flex-sub text-right">
+								{{item.updateTime?item.updateTime:''}}
+							</view>
+						</view>
+						<view class="flex margin-sm">
+							<text class="flex-sub text-left">状态</text>
+							<view class="flex-sub text-right" wx:if="{{item.status == '0'}}" style="color: #F27B1E;">待确认</view>
+							<view class="flex-sub text-right" wx:if="{{item.status == '1'}}" style="color: #49BF5A;">已确认</view>
+							<view class="flex-sub text-right" wx:if="{{item.status == '2'}}" style="color: #E73423;">已拒绝</view>
+						</view>
+						<view class=" flex margin-sm">
+							<text class="flex-sub text-left">订单总额</text>
+							<view class="flex-sub text-right">
+								￥{{item.paymentPrice?item.paymentPrice:'0'}}
+							</view>
+						</view>
+						<view class=" flex margin-sm">
+							<text class="flex-sub text-left">未结款金额</text>
+							<view class="flex-sub text-right">
+								￥{{item.paymentPriceCurrent?item.paymentPriceCurrent:'0'}}
+							</view>
+						</view>
+						<view class=" flex margin-sm">
+							<text class="flex-sub text-left">本次结款金额</text>
+							<view class="flex-sub text-right">
+								￥{{item.payPrice?item.payPrice:'0'}}
+								<!-- <input type="number" style="border: 1px solid #999;"placeholder="请输入结款金额"></input> -->
+							</view>
+						</view>
+						<view class=" flex margin-sm" style="height: 200rpx;">
+							<text class="flex-sub text-left">凭证信息</text>
+							<view class="flex-twice text-right flex" style="width:400rpx;">
+								<image wx:for="{{item.picUrl}}" wx:key="index" bindtap="ViewImages" data-url="{{item}}" src="{{item}}" style="height: 176rpx;width: 176rpx; margin-right: 40rpx;border: 1px solid #ccc;border-radius: 4px;"></image>
+							</view>
+						</view>
+					</view>
+					<view class="" class="payment">
+						<view class="texttitle" style="margin-left: 8rpx;">
+							<image src="../../public/img/mine/1-icon@3x.png" style="width: 50rpx;height: 50rpx;"></image>
+							<text>请输入本次结款金额</text>
+						</view>
+						<input type="number" value="{{payment}}" bindblur="payment" placeholder="" />
+					</view>
+					<view class="cu-bar bg-white" style="margin: 30rpx 0;">
+						<view class="action texttitle">
+							<image src="../../public/img/mine/2-icon@3x.png"></image>
+							<text>上传凭证</text>
+						</view>
+						<view class="action">
+							{{imgList.length}}/2
+						</view>
+					</view>
+					<view class="cu-form-group" style="padding: 0 100rpx; height: 180rpx;">
+						<view class="grid col-4 grid-square flex-sub" style="justify-content: flex-start;">
+							<view class="bg-img" wx:for="{{imgList}}" wx:key="index" bindtap="ViewImage" data-url="{{imgList[index]}}" style="margin-right: 40rpx;width: 178rpx;height: 178rpx;border: 1px solid rgba(234,234,234,1);border-radius: 2px;">
+								<image src='{{imgList[index]}}' mode='aspectFill' style="position: absolute;top: 0;left: 0;"></image>
+								<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+									<text class="cuIcon-close"></text>
+								</view>
+							</view>
+							<view class="" bindtap="ChooseImage" wx:if="{{imgList.length<2}}" style="position: relative;width: 178rpx;height: 178rpx;border: 1px solid rgba(234,234,234,1);border-radius: 2px;">
+								<text class="" style="width: 100%;position: absolute;top: 70%;left: 50%;transform: translateX(-50%);font-size: 10px;color: #666;">点击拍照/相册</text>
+								<image src="../../public/img/mine/4-icon@3x.png" style="width: 88rpx;height: 74rpx;position: absolute;top: 20%;left: 50%;transform: translateX(-50%);"></image>
+							</view>
+						</view>
+					</view>
+					<view class="otherInfo" style="margin: 30rpx 0;" wx:if="{{modalName}}">
+						<view class="texttitle">
+							<image src="../../public/img/mine/3-icon@3x.png"></image>
+							<text>添加备注</text>
+						</view>
+						<view class="beizhu">
+							<textarea wx:if="{{showtextarea}}" fixed="true" style="text-align:left!important;" value="{{reason}}" bindblur="saveReason"/>
+							<view wx:else bindtap='conversation1' style="padding: 10rpx;width: 100%;height: 100%;text-align: left;">{{reason}}</view>
+					<!-- <input  value="{{reason}}" bindblur="saveReason" /> -->
+				</view>
+				
+			</view>
+		</view>
+		<view class="submitbtn">
+			<view class="bgcbtn" wx:if="{{payment == ''}}"></view>
+			<view class="" bindtap="confirm" style="background:linear-gradient(135deg,rgba(235,10,130,1) 0%,rgba(231,52,35,1) 100%);">确认</view>
+		</view>
+      </view>
+    </view>
+  </view>
+</view>

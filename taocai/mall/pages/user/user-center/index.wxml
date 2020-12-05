@@ -1,0 +1,348 @@
+<!--
+  - Copyright (C) 2018-2019
+  - All rights reserved, Designed By www.joolun.com
+  - 注意：
+  - 本软件为www.joolun.com开发研制，未经购买不得使用
+  - 购买后可获得全部源代码（禁止转卖、分享、上传到码云、github等开源平台）
+  - 一经发现盗用、分享等行为，将追究法律责任，后果自负
+-->
+<!-- 渐变的头部 -->
+<!-- <cu-custom bgColor="bg-white">
+	<view slot="content" style="color: #000;">个人中心</view>
+</cu-custom> -->
+<view class="centerTitle" style="top:{{StatusBar+10}}px;">个人中心</view>
+<image src="../../../public/img/mine/headerBgc.png" mode="heightFix" style="width: 100%;height: 420rpx;" class="banner"></image>
+<!-- 图片背景头部 -->
+<view class="cu-list maincontainer" style="height: 90vh;">
+	<view class="userinfoss bg-white cu-list menu card-menu radius cu-item cuitem">
+		<view class="cu-list menu-avatar">
+			<view class="cu-item cuitem">
+				<view class="cu-avatar round lg" style="background-image:url({{wxUser.headimgUrl}});">
+					<image src="../../../public/img/mine/2@3x.png" wx:if="{{!wxUser.headimgUrl}}" class="tx-image"></image>
+				</view>
+				<view class="content">
+					<view class="text-black text-lg" wx:if="{{wxUser.nickName}}" style="font-size: 16px;font-weight: bold;">{{wxUser.nickName}}</view>
+					<button class="cu-btn round sm line-gradualBlue" open-type="getUserInfo" bind:getuserinfo="agreeGetUser" lang="zh_CN">
+						{{!wxUser.nickName ? '成为会员' : '更新昵称'}}
+					</button>
+					<!-- <button class="cu-btn round sm line-gradualBlue" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">领取手机号</button> -->
+				</view>
+				<view class='action'>
+					<view class="text-xl " bindtap="settings">
+						<image src="../../../public/img/mine/shezhi_icon@3x.png" class="icon-setting"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 我的收藏 -->
+		<view class="cu-list menu card-menu mycollection" style="margin-top: 0px;padding: 30rpx 0;">
+			<view class="cu-list grid col-4 no-border nav-list" style="justify-content: space-between;">
+				<view class="cu-item" style="width: 96rpx;font-size: 12px;">
+					<navigator url="/pages/user/user-collect/index" hover-class="none">
+						<image src="../../../public/img/mine/1.png" class="icon_dh"></image>
+						<text>我的收藏</text>
+					</navigator>
+				</view>
+				<view class="cu-item" style="width: 96rpx;font-size: 12px;">
+					<navigator url="/pages/user/user-address/list/index" hover-class="none">
+						<image src="../../../public/img/mine/2.png" class="icon_dh" style="width: 38rpx;"></image>
+						<text>收货地址</text>
+					</navigator>
+				</view>
+				<view class="cu-item" style="width: 96rpx;font-size: 12px;text-align: center;">
+					<navigator url="" hover-class="none">
+						<image src="../../../public/img/mine/3.png" class="icon_dh"></image>
+						<button class="kefu" open-type="contact" bindcontact="handleContact" size="mini" plain="true">
+						  在线客服
+						</button>
+					</navigator>
+				</view>
+				<view class="cu-item" catchtap='tels' style="width: 96rpx;font-size: 12px;">
+					<navigator url="" hover-class="none">
+						<image src="../../../public/img/mine/4.png" class="icon_dh"></image>
+						<text>客服电话</text>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- <view class="padding flex text-center text-grey bg-gradual-red shadow-warp" wx:if="{{userInfo}}">
+  <view class="flex flex-sub flex-direction solid-right">
+    <view class="text-xxl text-white">{{userInfo.userCode}}</view>
+    <view class="margin-top-sm text-white">
+      <text class="cuIcon-barcode"></text> {{userInfo.userGrade == '0' ? '用户' : '会员'}}编号</view>
+  </view>
+  <navigator class="flex flex-sub flex-direction solid-right" url="/pages/user/user-points-record/index" hover-class="none">
+    <view class="text-xxl text-white">{{userInfo.pointsCurrent}}</view>
+    <view class="margin-top-sm text-white">
+      <text class="cuIcon-medal"></text> 当前积分</view>
+  </navigator>
+  <navigator class="flex flex-sub flex-direction solid-right" url="/pages/coupon/coupon-user-list/index" hover-class="none">
+    <view class="text-xxl text-white">{{userInfo.couponNum}}</view>
+    <view class="margin-top-sm text-white">
+      <text class="cuIcon-ticket"></text> 优惠券</view>
+  </navigator>
+</view> -->
+
+	<view class="cu-list menu card-menu radius myorderlist">
+		<view class="cu-bar bg-white solid-bottom">
+			<view class="icon-bg"></view>
+			<view class="action text-black myorder text-lg">
+				我的订单
+			</view>
+			<navigator class="action bg-white allorder text-sm" url="/pages/order/order-list/index" hover-class="none">
+				全部订单<text class="cuIcon-right bg-white text-sm"></text>
+			</navigator>
+		</view>
+		<!-- 商品信息 -->
+		<view class="goodsOrder">
+			<!-- 我的订单 -->
+			<view class="cu-list grid col-5 no-border">
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=0" hover-class="none">
+						<view wx:if="{{orderCountAll[0]>0}}" class="cu-tag badge" style="background-color: #E73423;border-radius: 50%;width: 28rpx;position: absolute;top: -10rpx;left: 35px;z-index: 100;">{{orderCountAll[0]}}</view>
+						<image wx:if="{{orderCountAll[0]>0}}" src="../../../public/img/mine/xj-icon@3x.png" class="icon_askprice" style="width: 45rpx;height: 45rpx;"></image>
+						<image wx:if="{{orderCountAll[0] == 0}}" src="../../../public/img/mine/xj2-icon@3x.png" class="icon_askprice" style="width: 45rpx;height: 45rpx;"></image>
+						<text wx:if="{{orderCountAll[0] == 0}}" class="text-sm">询价中</text>
+						<text wx:if="{{orderCountAll[0]>0}}" class="text-sm" style="color: #E73423;">询价中</text>
+						<image  wx:if="{{orderCountAll[0]>0}}" src="../../../public/img/mine/8@3x.png" class="jiantou-image"></image>
+						<image wx:if="{{orderCountAll[0] == 0}}"  src="../../../public/img/mine/9@3x.png" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=8" hover-class="none">
+						<view wx:if="{{orderCountAll[8]>0}}" class="cu-tag badge" style="background-color: #E73423;border-radius: 50%;width: 28rpx;position: absolute;top: -10rpx;left: 35px;z-index: 100;">{{orderCountAll[8]}}</view>
+						<image wx:if="{{orderCountAll[8]>0}}" src="../../../public/img/mine/dqrs.png" class="icon_askprice"></image>
+						<image wx:if="{{orderCountAll[8] == 0}}" src="../../../public/img/mine/dqr.png" class="icon_askprice"></image>
+						<text wx:if="{{orderCountAll[8]>0}}" class="text-sm" style="color: #E73423;">待付款</text>
+						<text wx:if="{{orderCountAll[8] == 0}}" class="text-sm">待付款</text>
+						<image wx:if="{{orderCountAll[8]>0}}" src="../../../public/img/mine/8@3x.png" class="jiantou-image"></image>
+						<image wx:if="{{orderCountAll[8] == 0}}" src="../../../public/img/mine/9@3x.png" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<!-- <view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=0" hover-class="none">
+						<view wx:if="{{orderCountAll[0]>0}}" class="cu-tag badge">{{orderCountAll[0]}}</view>
+						<image src="../../../public/img/mine/dfk.png" class="icon_askprice"></image>
+						<text class="text-sm">待付款</text>
+						<image src="../../../public/img/mine/9@3x.png" class="jiantou-image"></image>
+					</navigator>
+				</view> -->
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=1" hover-class="none">
+						<view wx:if="{{orderCountAll[1]>0}}" class="cu-tag badge" style="background-color: #E73423;border-radius: 50%;width: 28rpx;position: absolute;top: -10rpx;left: 35px;z-index: 100;">{{orderCountAll[1]}}</view>
+						<image wx:if="{{orderCountAll[1] == 0}}" src="../../../public/img/mine/fh2-icon@3x.png" class="icon_askprice  icon-fahuo"></image>
+						<image wx:if="{{orderCountAll[1]>0}}" src="../../../public/img/mine/dfus.png" class="icon_askprice  icon-fahuo"></image>
+						<text wx:if="{{orderCountAll[1]>0}}" class="text-sm" style="color: #E73423;">待发货</text>
+						<text wx:if="{{orderCountAll[1] == 0}}" class="text-sm">待发货</text>
+						<image wx:if="{{orderCountAll[1]>0}}" src="../../../public/img/mine/8@3x.png" class="jiantou-image"></image>
+						<image wx:if="{{orderCountAll[1] == 0}}" src="../../../public/img/mine/9@3x.png" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=2" hover-class="none">
+						<view wx:if="{{orderCountAll[2]>0}}" class="cu-tag badge" style="background-color: #E73423;border-radius: 50%;width: 28rpx;position: absolute;top: -10rpx;left: 35px;z-index: 100;">{{orderCountAll[2]}}</view>
+						<image wx:if="{{orderCountAll[2] == 0}}" src="../../../public/img/mine/dfh.png" class="icon_askprice"></image>
+						<image wx:if="{{orderCountAll[2]>0}}" src="../../../public/img/mine/dshs.png" class="icon_askprice"></image>
+						<text wx:if="{{orderCountAll[2]>0}}" class="text-sm" style="color: #E73423;">待收货</text>
+						<text wx:if="{{orderCountAll[2] == 0}}" class="text-sm">待收货</text>
+						<image wx:if="{{orderCountAll[2]>0}}" src="../../../public/img/mine/8@3x.png" class="jiantou-image"></image>
+						<image wx:if="{{orderCountAll[2] == 0}}" src="../../../public/img/mine/9@3x.png" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=4" hover-class="none">
+						<view wx:if="{{orderCountAll[3]>0}}" class="cu-tag badge" style="background-color: #E73423;border-radius: 50%;width: 28rpx;position: absolute;top: -10rpx;left: 35px;z-index: 100;">{{orderCountAll[3]}}</view>
+						<image wx:if="{{orderCountAll[3] == 0}}" src="../../../public/img/mine/dpj.png" class="icon_askprice" style="width: 45rpx;height: 45rpx;"></image>
+						<image wx:if="{{orderCountAll[3]>0}}" src="../../../public/img/mine/dpjs.png" class="icon_askprice" style="width: 45rpx;height: 45rpx;"></image>
+						<text wx:if="{{orderCountAll[3]>0}}" class="text-sm" style="color: #E73423;">待评价</text>
+						<text wx:if="{{orderCountAll[3] == 0}}" class="text-sm">待评价</text>
+						<!-- <image src="../../../public/img/toc-images/jiantou-gray.svg" class="jiantou-image"></image> -->
+					</navigator>
+				</view>
+			</view>
+			<!-- 签收物流 -->
+			<view class="basicInfo"> 
+				<view class="bi-top">
+					<text>最新物流</text>
+					<text>{{newwuliuOrder.updateTime}}</text>
+				</view>
+				<view class="bi-btm">
+					<view class="goodsImage">
+						<image src="{{newwuliuOrder.listOrderItem[0].picUrl ? newwuliuOrder.listOrderItem[0].picUrl : '/public/img/no_pic.png'}}"></image>
+					</view>
+					<view class="basicright" bindtap="orderLogistics">
+						<view class="bir-t">
+							<image src="../../../public/img/mine/11@3x.png"></image>
+							{{newwuliuOrder.orderLogistics.statusDesc?newwuliuOrder.orderLogistics.statusDesc:"无"}}
+						</view>
+						<view class="bir-b">
+							<!-- 【合肥市】您的快递已签收，签收人：已签收 -->
+							暂无物流信息
+						</view>
+					</view>
+				</view>
+			</view>
+			<!-- <view class="cu-list grid col-4 orderstep no-border">
+				<view class="cu-item">
+					<navigator url="/pages/order/order-list/index?status=0" hover-class="none">
+						<view class="cuIcon-pay text-blue">
+							<view wx:if="{{orderCountAll[0]>0}}" class="cu-tag badge">{{orderCountAll[0]}}</view>
+						</view>
+						<view class="stepbox">
+							<image src="../../../public/img/toc-images/11.svg" class="icon_order"></image>
+							<image src="../../../public/img/toc-images/16.svg" class="border-image"></image>
+						</view>
+					</navigator>
+				</view>
+				<view class="cu-item">
+					<navigator url="/pages/order/order-list/index?status=1" hover-class="none">
+						<view class="cuIcon-send text-blue">
+							<view wx:if="{{orderCountAll[1]>0}}" class="cu-tag badge">{{orderCountAll[1]}}</view>
+						</view>
+						<view class="stepbox">
+							<image src="../../../public/img/toc-images/12.svg" class="icon_order"></image>
+							<image src="../../../public/img/toc-images/16.svg" class="border-image"></image>
+						</view>
+					</navigator>
+				</view>
+				<view class="cu-item">
+					<navigator url="/pages/order/order-list/index?status=2" hover-class="none">
+						<view class="cuIcon-deliver_fill text-blue">
+							<view wx:if="{{orderCountAll[2]>0}}" class="cu-tag badge">{{orderCountAll[2]}}</view>
+						</view>
+						<view class="stepbox">
+							<image src="../../../public/img/toc-images/13.svg" class="icon_order"></image>
+							<image src="../../../public/img/toc-images/16.svg" class="border-image"></image>
+						</view>
+					</navigator>
+				</view>
+				<view class="cu-item">
+					<navigator url="/pages/order/order-list/index?status=4" hover-class="none">
+						<view class="cuIcon-evaluate_fill text-blue">
+							<view wx:if="{{orderCountAll[3]>0}}" class="cu-tag badge">{{orderCountAll[3]}}</view>
+						</view>
+						<image src="../../../public/img/toc-images/14.svg" class="icon_order"></image>
+					</navigator>
+				</view>
+			</view> -->
+		</view>
+	</view>
+	<!-- 我的询价单
+	<view class="cu-list menu card-menu margin-top-sm radius">
+		<view class="cu-bar bg-white solid-bottom">
+			<view class="action text-black myquesorder text-lg">
+				我的询价单
+			</view>
+			<navigator class="action bg-white allorder text-sm" url="" hover-class="none">
+				全部询价单<text class="cuIcon-right bg-white text-sm"></text>
+			</navigator>
+		</view>
+		商品信息
+		<view class="questionOrder">
+			基本信息
+			<view class="cu-list grid col-4 no-border bg-white basicInfo">
+				<view class="cu-item">
+					<navigator url="" hover-class="none">
+						<image src="../../../public/img/toc-images/10.svg" class="goodsImage"></image>
+					</navigator>
+				</view>
+				<view class="cu-item">
+					<navigator url="" hover-class="none">
+						<text class="text-sm">订单编号</text>
+						<text class="text-xs">120-212121</text>
+					</navigator>
+				</view>
+				<view class="cu-item">
+					<navigator url="" hover-class="none">
+						<text class="text-sm">商品名称</text>
+						<text class="text-xs">分体式锤</text>
+					</navigator>
+				</view>
+				<view class="cu-item">
+					<navigator url="" hover-class="none">
+						<text class="text-sm">规格型号</text>
+						<text class="text-xs">16mm*0.8mm*0.4mm</text>
+					</navigator>
+				</view>
+			</view>
+			询价流程
+			<view class="cu-list grid col-5 no-border">
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=0" hover-class="none">
+						<image src="../../../public/img/toc-images/18.svg" class="icon_askprice"></image>
+						<text class="text-sm">新建询价</text>
+						<image src="../../../public/img/toc-images/jiantou.svg" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=1" hover-class="none">
+						<image src="../../../public/img/toc-images/19.svg" class="icon_askprice"></image>
+						<text class="text-sm">待报价</text>
+						<image src="../../../public/img/toc-images/jiantou.svg" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=2" hover-class="none">
+						<image src="../../../public/img/toc-images/20.svg" class="icon_askprice"></image>
+						<text class="text-sm">已报价</text>
+						<image src="../../../public/img/toc-images/jiantou-gray.svg" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=4" hover-class="none">
+						<image src="../../../public/img/toc-images/21%20-%20gray.svg" class="icon_askprice"></image>
+						<text class="text-sm">已撤销</text>
+						<image src="../../../public/img/toc-images/jiantou-gray.svg" class="jiantou-image"></image>
+					</navigator>
+				</view>
+				<view class="cu-item stepbox">
+					<navigator url="/pages/order/order-list/index?status=4" hover-class="none">
+						<image src="../../../public/img/toc-images/22%20-%20gray.svg" class="icon_askprice"></image>
+						<text class="text-sm">已退回</text>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</view> -->
+	<!-- <view class="cu-list menu card-menu margin-top-xl shadow-lg radius">
+		<navigator class="cu-item arrow" url="/pages/coupon/coupon-user-list/index" hover-class="none">
+			<view class="content">
+				<text class="cuIcon-ticket text-orange"></text>
+				<text class="text-grey">我的卡券</text>
+			</view>
+		</navigator>
+		<navigator class="cu-item arrow" url="/pages/groupon/groupon-user-list/index" hover-class="none">
+			<view class="content">
+				<text class="cuIcon-group text-blue"></text>
+				<text class="text-grey">我的拼团</text>
+			</view>
+		</navigator>
+		<navigator class="cu-item arrow" url="/pages/bargain/bargain-user-list/index" hover-class="none">
+			<view class="content">
+				<text class="cuIcon-cardboardforbid text-orange"></text>
+				<text class="text-grey">我的砍价</text>
+			</view>
+		</navigator>
+		<navigator class="cu-item arrow" url="/pages/user/user-collect/index" hover-class="none">
+			<view class="content">
+				<text class="cuIcon-like text-pink"></text>
+				<text class="text-grey">我的收藏</text>
+			</view>
+		</navigator>
+		<navigator class="cu-item arrow" url="/pages/user/user-address/list/index" hover-class="none">
+			<view class="content">
+				<text class="cuIcon-location text-green"></text>
+				<text class="text-grey">收货地址</text>
+			</view>
+		</navigator>
+	</view> -->
+	<!-- 分割条 -->
+	<!-- <view class="fenge" style="width: 100%;height: 2rpx;background-color: rgba(234,234,234,1);margin:40rpx 0;">
+	</view> -->
+	<!-- 技术支持 -->
+	<view class="text-xs text-center margin-sm" style="color:rgba(191,191,191,1);" bindtap="towebview">
+		www.yizhuang.com 翼装科技提供技术支持
+	</view>
+</view>
+<!-- <ad unit-id="adunit-80d788ab8518b5b3"></ad> -->

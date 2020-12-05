@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "refresh": "/components/refresh",
+    "nav-tab": "/components/navTab"
+  }
+}

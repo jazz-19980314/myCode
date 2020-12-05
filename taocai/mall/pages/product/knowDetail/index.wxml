@@ -1,0 +1,114 @@
+<!--pages/product/pubilcitydetail/index.wxml-->
+<!-- <view class="video-title">
+	<view class="vt-top">
+		<text class="text-blue" style="margin-right: 40rpx;">建筑资讯</text>
+		关于建筑施工方面的八条知识，全干货不看后悔！
+	</view>
+</view>
+<view class="video-cate">
+	<image src="../../../public/img/index_img/kj2@2x.png"></image>
+	<view class="vc-right">
+		<view>热门精选</view>
+		<view class="vc-right1">2020-4-29</view>
+	</view>
+</view>
+<view class="banner">
+	<image src="../../../public/img/index_img/jianzhu.jpg"></image>
+</view>
+<view class="aticledetail">
+	<view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第一条：危险性较大的专项方案</view>
+		<view>供项目实施的施工组织设计和危险性较大的专项方案必须严格按程序进行审批，项目经理必须组织项目会审，并确保其可实施性。超过一定规模的风险性较大的专项方案公司总工程师必须组织会审。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第二条：技术资料</view>
+		<view>所有技术资料必须由相应责任人形成，严禁外包。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第三条：模架体系</view>
+		<view>1、模架系统必须有可实施的、有效的建筑施工图。
+			2、后浇带的支撑体系必须单独设置，严禁拆除后回顶。
+			3、所有边梁支撑系统必须与内架连成一个有机整体，严禁支撑在外架上。
+			4、步距严禁超过1.5米，顶托底部的立柱顶端应沿纵横向设置水平杆。
+			5、除经专门设计的定型模板系统外，任何情况下，对拉螺杆间距必须小于或等于500mm。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第四条：外架系统</view>
+		<view>1、外架系统必须有可实施的、有效的施工图。
+			2、外架水平封闭必须达到如下要求：作业层和作业层的下一层，悬挑架（爬架）首层，落地架第二层，中间层不超过10米且不超过三层必须全封闭。
+			3、悬挑架的悬挑梁必须采用不小于16号的国标工字钢，斜拉钢丝绳直径不小于14，每次悬挑高度不超过20米。
+			4、整体提升架的导轨或导杆必须有三处可靠的连墙点。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第五条：用电系统</view>
+		<view>1、总配电箱漏电保护器的漏电动作电流150mA，动作时间0.2s；开关箱漏电动作电流15mA或30mA，动作时间0.1s。
+			2、电焊机必须装设二次降压保护器（包括电渣压力焊机）。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第六条：高危设备（塔吊、人货电梯、物料提升机等）</view>
+		<view>1、施工方案必须由施工方编制，施工方总工程师必须审批后报总包单位审批。
+			2、租赁方手续必须齐全、有效；安装、顶升、拆除施工人员必须人证合一。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第七条：钢筋工程</view>
+		<view>1、必须使用水泥砂浆垫块或塑料垫块（特殊情况下特殊制作的垫块除外）。
+			2、钢筋连接必须按特殊过程进行有效管理，并确保其符合规范要求。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">第八条：混凝土工程</view>
+		<view>1、施工缝凿毛处理必须在混凝土终凝后进行，并清理干净后才能进入下道工序。
+			2、楼板混凝土必须使用平板振动器进行辅助振捣；竖向构件拆模后至少要有7天的有效养护时间。
+			3、必须现场取样制做试块，按规范要求进行养护和送检。
+			4、混凝土缺陷必须有专门的、有效的修补方案，并严格按方案精心实施。</view>
+	</view>
+</view>
+<view style="width: 100%;font-size: 16px;padding: 0 30rpx;font-weight: bold;" class="text-blue">
+	防水推荐
+</view>
+<view class="tuijian">
+	<image src="../../../public/img/index_img/640.gif"></image>
+	<view style="width: 100%;color: #999;text-align: right;padding: 0 30rpx;">广告：飞翎防水</view>
+</view> -->
+<!-- <view class="video-recommend">
+	<view class="recommend-title">更多阅读推荐</view>
+	<view class="vr-detail" wx:for="{{recommendslist}}" wx:key="index">
+		<view class="vr-left">
+			<view class="vr-name">
+				<image src="../../../public/img/index_img/kj1@2x.png"></image>
+				<view>{{item.rename}}</view>
+			</view>
+			<view class="vr-title">
+				{{item.title}}
+			</view>
+			<view class="vr-time">
+				<text>{{item.date}}</text>
+			</view>
+		</view>
+		<view class="vr-image">
+			<image src="{{item.videourl}}"></image>
+			<view>{{item.viewsnumber}}万阅读</view>
+		</view>
+	</view>
+</view>
+ -->
+ <view style="width: 100%;" wx:if="{{list.videoUrls[currentIndex]}}">
+ 	<!-- <view class="video-title">
+ 		<view class="vt-top">
+ 			{{list.content}}
+ 		</view>
+ 	</view> -->
+ 	<view class="video">
+ 		<text>05:24</text>
+ 		<video
+ 		      id="myVideo" 
+ 		      src="{{list.videoUrls[currentIndex]}}" 
+ 		      binderror="videoErrorCallback" 
+ 		      show-center-play-btn='{{true}}' 
+ 		      show-play-btn="{{true}}" 
+ 		      controls
+ 			  object-fit = "fill"
+ 			  enable-play-gesture = "{{true}}"
+ 			  vslide-gesture-in-fullscreen = "{{true}}"
+ 		      picture-in-picture-mode="{{['push', 'pop']}}"
+ 		      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+ 		      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+ 		   ></video>
+ 	</view>
+ 	<view class="vt-bot">
+ 		<view class="vt-hot">
+ 			热门精选
+ 			<text>{{list.updateTime}}</text>
+ 		</view>
+ 		<view>672人观看</view>
+ 	</view>
+ </view>
+ <import src="/public/wxParse/wxParse.wxml"/>
+  <view class="bg-white" style="padding: 20rpx;">
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+  </view>

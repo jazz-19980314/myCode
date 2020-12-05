@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "bjx-inputs": "/components/bjx-inputs/bjx-inputs"
+  }
+}

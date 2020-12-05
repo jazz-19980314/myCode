@@ -1,0 +1,71 @@
+<!-- <navigator url="/pages/product/pubilcitydetail/index">
+	<view class="video">
+		<image src="../../../public/img/index_img/20200615084921.png"></image>
+	</view>
+</navigator>
+<navigator url="/pages/product/pubilcitydetail/index">
+	<view class="video-title">
+		<view class="vt-top">
+			知识！防水卷材施工一般在什么部位容易出现渗漏水！
+		</view>
+		<view class="vt-bot">
+			<view class="vt-hot">
+				热门精选
+				<text>2020-4-29</text>
+			</view>
+			<view>672人阅读</view>
+		</view>
+	</view>
+</navigator>
+<view class="video-recommend">
+	<navigator url="/pages/product/knowDetail/index">
+		<view class="vr-detail" wx:for="{{recommendslist}}" wx:key="index">
+			<view class="vr-left">
+				<view class="vr-name">
+					<image src="../../../public/img/index_img/kj1@2x.png"></image>
+					<view>{{item.rename}}</view>
+				</view>
+				<view class="vr-title">
+					{{item.title}}
+				</view>
+				<view class="vr-time">
+					<text>{{item.date}}</text>
+				</view>
+			</view>
+			<view class="vr-image">
+				<image src="{{item.videourl}}"></image>
+				<view>{{item.viewsnumber}}万阅读</view>
+			</view>
+		</view>
+	</navigator>
+</view>
+<view class="bottominfo">
+	没有更多数据啦
+</view>
+ -->
+ <!-- html转wxml -->
+ <!-- <import src="/public/wxParse/wxParse.wxml"/>
+ <view class="bg-white" style="padding: 20rpx;">
+   <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+ </view> -->
+<view wx:for="{{list}}" wx:key="index" bindtap="enterdetail" data-index="{{index}}">
+ 	<view class="video">
+ 		<image src="{{item.picUrls[0]}}" style="width: 100%;height: 100%;"></image>
+ 		<!-- <image src="../../../public/img/index_img/sp_2@2x.png" class="playVideo"></image> -->
+ 	</view>
+ 	<view class="video-title">
+ 		<view class="vt-top">
+ 			{{item.linkUrls[0]}}
+ 		</view>
+ 		<view class="vt-bot">
+ 			<view class="vt-hot">
+ 				热门精选
+ 				<text>{{item.updateTime}}</text>
+ 			</view>
+ 			<view>672人观看</view>
+ 		</view>
+ 	</view>
+ </view>
+ <view wx:if="{{list.length == 0}}" style="margin-top: 200px;width: 100%;text-align: center;font-weight: bold;font-size: 18px;">
+ 	 <image style="width: 200px;height: 150px;margin: 0px auto;" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/3f0e0cfd-1fd8-495a-97c8-c93c1d74f423.png"></image>
+ </view>

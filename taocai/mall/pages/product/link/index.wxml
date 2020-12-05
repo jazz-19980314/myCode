@@ -1,0 +1,18 @@
+<!--pages/product/link/index.wxml-->
+<!-- <navigator target="miniProgram" open-type="navigate" app-id="wx21f1980094ed22e2" path="" version="release"> -->
+<view class="content">
+	<view class="condetail" wx:for="{{list}}" wx:key="index" bindtap="handelClick" data-index="{{index}}">
+		<view class="cd-top">
+			<image src="{{item.bussicon}}"></image>
+			<view>{{item.bussname}}</view>
+		</view>
+		<view class="cd-bottom">
+			{{item.bussinfo}}
+		</view>
+	</view>
+</view>
+
+<!-- </navigator> -->
+<view wx:if="{{list.length == 0}}" style="margin-top: 200px;width: 100%;text-align: center;font-weight: bold;font-size: 18px;">
+	<image style="width: 200px;height: 150px;margin: 0px auto;" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/3f0e0cfd-1fd8-495a-97c8-c93c1d74f423.png"></image>
+</view>

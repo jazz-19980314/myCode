@@ -1,0 +1,86 @@
+<!-- <navigator url="/pages/product/videodetial/index"> -->
+	<view wx:for="{{list}}" wx:key="index" bindtap="enterdetail" data-index="{{index}}">
+		<view class="video">
+			<image src="{{item.picUrls[0]}}" style="width: 100%;height: 100%;"></image>
+			<image src="../../../public/img/index_img/sp_2@2x.png" class="playVideo"></image>
+		</view>
+		<view class="video-title">
+			<view class="vt-top">
+				{{item.linkUrls[0]}}
+			</view>
+			<view class="vt-bot">
+				<view class="vt-hot">
+					热门精选
+					<text>{{item.updateTime}}</text>
+				</view>
+				<view>672人观看</view>
+			</view>
+		</view>
+	</view>
+	<view wx:if="{{list.length == 0}}" style="margin-top: 200px;width: 100%;text-align: center;font-weight: bold;font-size: 18px;">
+		 <image style="width: 200px;height: 150px;margin: 0px auto;" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/3f0e0cfd-1fd8-495a-97c8-c93c1d74f423.png"></image>
+	</view>
+<!-- </navigator> -->
+<!-- 视频标题 -->
+<!-- <navigator url="/pages/product/videodetial/index">
+	
+</navigator> -->
+<!-- 静态数据 -->
+<!-- <navigator url="/pages/product/videodetial/index">
+	<view class="video">
+		<image src="../../../public/img/index_img/3@3x.png" style="width: 100%;height: 100%;"></image>
+		<image src="../../../public/img/index_img/sp_2@2x.png" class="playVideo"></image>
+	</view>
+</navigator>
+<navigator url="/pages/product/videodetial/index">
+	<view class="video-title">
+	<view class="vt-top">
+		我的世界目光所及之处 皆是温情相伴。等你
+	</view>
+	<view class="vt-bot">
+		<view class="vt-hot">
+			热门精选
+			<text>2020-5-20</text>
+		</view>
+		<view>543人观看</view>
+	</view>
+</view>
+</navigator> -->
+<!-- 视频推荐 -->
+<!-- <view class="video-recommend">
+	<view class="vr-detail" wx:for="{{list}}" wx:key="index" bindtap="enterdetail" data-index = "{{index}}">
+		<view class="vr-left">
+			<view class="vr-title">
+				{{item.content}}
+			</view>
+			<view class="vr-time">
+				{{item.rename}}
+				<text>{{item.updateTime}}</text>
+			</view>
+		</view>
+		<view class="vr-image">
+			<view class="video">
+				<video 
+				      id="myVideo" 
+				      src="{{videoUrls[0]}}" 
+				      binderror="videoErrorCallback" 
+				      show-center-play-btn='{{true}}' 
+				      show-play-btn="{{true}}" 
+				      controls
+					  object-fit = "fill"
+				      picture-in-picture-mode="{{['push', 'pop']}}"
+				      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+				      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+					  title="{{item.content}}"
+				   ></video>
+			</view>
+			<image src="{{picUrls[0]}}"></image>
+			<image src="../../../public/img/index_img/sp_2@2x.png" class="vr-play"></image>
+			<text>{{item.viewsnumber}}观看</text>
+		</view>
+	</view>
+</view> -->
+<!-- 底部提示 -->
+<!-- <view class="bottominfo" style="margin-top: ;">
+	没有更多数据啦
+</view> -->

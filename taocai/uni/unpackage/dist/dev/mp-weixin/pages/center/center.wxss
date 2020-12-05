@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.banner {
+  position: absolute;
+  z-index: 1;
+}
+.main-content {
+  position: relative;
+  z-index: 10;
+  top: 340rpx;
+}
+.main-content .nav-flow {
+  width: 690rpx;
+  height: 180rpx;
+  background: #feffff;
+  box-shadow: -2px -2px 4px 0px rgba(229, 238, 255, 0.5), 2px 2px 4px 0px rgba(24, 79, 186, 0.4);
+  border-radius: 4px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.main-content .nav-flow view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.main-content .nav-flow view image {
+  width: 90rpx;
+  height: 90rpx;
+}
+.main-content .nav-flow view text {
+  height: 34rpx;
+  font-size: 12px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 34rpx;
+  margin-top: 10rpx;
+}
+.main-content .offer_special {
+  width: 690rpx;
+  padding: 50rpx 0 40rpx 0;
+  margin: 0 auto;
+  position: relative;
+}
+.main-content .offer_special .offer_tig {
+  height: 50rpx;
+  line-height: 44rpx;
+  position: relative;
+  padding-left: 60rpx;
+  box-sizing: border-box;
+  margin-bottom: 25rpx;
+  font-weight: bold;
+}
+.main-content .offer_special .offer_tig image {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 16rpx;
+  position: absolute;
+  top: -2rpx;
+  left: 0;
+}
+.main-content .offer_special .text-xl {
+  height: 50rpx;
+  font-size: 18px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  color: #333333;
+  line-height: 25rpx;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+}
+.main-content .offer_special .newoffer {
+  color: #ff3543;
+  margin-bottom: 20rpx;
+  line-height: 34rpx;
+  margin-top: 10rpx;
+}
+.main-content .offer_special .nonewoffer {
+  color: #666666;
+  margin-bottom: 20rpx;
+  line-height: 34rpx;
+  margin-top: 10rpx;
+}
+.main-content .offer_special .offer_now {
+  width: 184rpx;
+  height: 60rpx;
+  background: -webkit-linear-gradient(right, #0d80f7 0%, #02a0fe 100%);
+  background: linear-gradient(270deg, #0d80f7 0%, #02a0fe 100%);
+  border-radius: 2px;
+  color: #FFFFFF;
+  line-height: 60rpx;
+  text-align: center;
+}
+.main-content .offer_special .nooffer_now {
+  background: -webkit-linear-gradient(right, #86C0FB 0%, #80CFFE 100%) !important;
+  background: linear-gradient(270deg, #86C0FB 0%, #80CFFE 100%) !important;
+}
+.main-content .offer_special .active_now {
+  background: -webkit-linear-gradient(right, #018FE4 0%, #0B72DD 100%) !important;
+  background: linear-gradient(270deg, #018FE4 0%, #0B72DD 100%) !important;
+}
+.main-content .offer_special .icon_right {
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  top: 170rpx;
+  right: 20rpx;
+  color: #CDCECF;
+}
+.main-content .common_business {
+  padding: 40rpx 0;
+}
+.main-content .common_business .business_content .business_detail {
+  width: 684rpx;
+  height: 140rpx;
+  background: #FEFFFF;
+  border-radius: 6px;
+  padding: 30rpx 20rpx 26rpx 34rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+  box-shadow: -2px -2px 4px 0px rgba(229, 238, 255, 0.5), 2px 2px 4px 0px rgba(24, 79, 186, 0.1);
+}
+.main-content .common_business .business_content .business_detail .business_title {
+  font-family: PingFangSC-Medium;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 40rpx;
+  margin-bottom: 8rpx;
+}
+.main-content .common_business .business_content .business_detail .business_info {
+  font-size: 12px;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
+  color: #666666;
+  line-height: 34rpx;
+}
+.main-content .common_business .business_content .business_detail .business_infonews {
+  color: #ff3543;
+}
+.main-content .common_business .business_content .business_detail .business_icon {
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  top: 60rpx;
+  right: 0;
+  color: #CDCECF;
+}
+.fen_step {
+  width: 100%;
+  height: 20rpx;
+  background: #f5faff;
+}
+.line-gre {
+  border-left: 6rpx solid #289F96;
+}
+.line-bl {
+  border-left: 6rpx solid #5483FE;
+}
+.line-re {
+  border-left: 6rpx solid #F75C61;
+}
+

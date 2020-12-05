@@ -1,0 +1,33 @@
+<view class="content">
+	<view class="condetail" wx:for="{{goodsAppraises}}" wx:key="index">
+		<view class="cd-title">
+			<view class="cd-left">
+				<view class="cu-avatar round" style="background-image:url({{item.headimgUrl}})">
+					<image src="../../../public/img/mine/2@3x.png" wx:if="{{!item.headimgUrl}}" class="tx-image"></image>
+				</view>
+				<view class="cd-name">
+					<text> {{item.nickName ? item.nickName : '匿名'}}</text>
+					<base-rade
+					    value='{{item.goodsScore}}'
+					    size='sm'/>
+				</view>
+			</view>
+			<view class="cd-date">{{item.createTime}}</view>
+		</view>
+		<view class="cd-info">
+			{{item.content ? item.content : '此人很懒没写评语'}}
+		</view>
+		<view class="cd-imagebox"  wx:if="{{item.picUrls}}">
+			<image wx:for="{{item.picUrls}}" src="{{item}}"></image>
+		</view>
+		<view class="cd-bussname">
+			{{item.goodsSpu.name}}({{item.specInfo}})
+		</view>
+		<view class="shoptime">
+			购买日期：{{item.goodsSpu.createTime}}
+		</view>
+	</view>
+</view>
+<view wx:if="{{goodsAppraises.length == 0}}" style="margin-top: 200px;width: 100%;text-align: center;font-weight: bold;font-size: 18px;">
+		 <image style="width: 200px;height: 150px;margin: 0px auto;" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/3f0e0cfd-1fd8-495a-97c8-c93c1d74f423.png"></image>
+</view>

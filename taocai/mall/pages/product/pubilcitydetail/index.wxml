@@ -1,0 +1,82 @@
+<!--pages/product/pubilcitydetail/index.wxml-->
+<!-- <web-view :webview-styles="webviewStyles" src="mall.program66.com">外部链接</web-view> -->
+<!-- <view>
+	{{list[0].content}}
+</view> -->
+<view class="video-title">
+	<view class="vt-top">
+		<text class="text-blue" style="margin-right: 40rpx;">防企网讯</text>
+		防水卷材施工，哪些部位容易出现渗漏呢？今天带大家了解一下出现的现象和原因分析以及防治措施
+	</view>
+</view>
+<view class="video-cate">
+	<image src="../../../public/img/index_img/kj2@2x.png"></image>
+	<view class="vc-right">
+		<view>热门精选</view>
+		<view class="vc-right1">2020-4-29</view>
+	</view>
+</view>
+<view class="banner">
+	<image src="../../../public/img/index_img/20200615084921.png"></image>
+</view>
+<view class="aticledetail">
+	<view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">1、卷材防水鼓泡</view>
+		<view>1、现象：</view>
+		<view>卷材铺贴后即发现鼓泡，一般由小到大，随气温的升高，气泡数量和尺寸增加。</view>
+		<view>2、原因分析：</view>
+		<view>基层不干燥，表面没有扫刷干净，防水层底部有水汽渗入，基层面没有涂刷基层处理剂，粘结剂与卷材材性不匹配，涂刷不均匀，铺贴卷材时没有将底面的空气排除，有的排气槽堵塞等。</view>
+		<view>3、防治措施：</view>
+		<view>基层必须干燥，用简易检验方法测试合格后，方可铺贴;基层要扫刷干净，选用的基层处理剂、粘结剂要和卷材的材性相匹配，经测试合格后方可使用;待涂刷的基层处理剂干燥后，涂刷粘结剂。卷材铺贴时，必须抹除下面的空气，滚压密实。也可采用条粘、点粘、空铺的方法，确保排气道畅通。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">2、卷材防水层裂缝</view>
+		<view>1、现象：</view>
+		<view>防水层出现沿预制屋面板端头裂缝、节点裂缝、不规则裂缝渗漏。</view>
+		<view>2、原因分析：</view>
+		<view>盲目使用延伸率低的卷材，板端头和节点细部没有做附加缓冲层和增强层，施工方法错误，如在铺贴卷材时拉得过紧。</view>
+		<view>3、防治措施：</view>
+		<text style="text-indent: 0;">1)、在预制屋面板端头缝处设缓冲层，干铺卷材条宽300mm。铺卷材时不宜拉得太紧。夏天施工要放松后铺贴。</text>
+		<view>在防水卷材已出现裂缝时，沿规则的裂缝弹线，用切割机切割。如基层没有留分格缝，则要切缝，缝宽20mm，缝内嵌填柔性密封膏，面上沿缝空铺一条宽200mm的卷材条作缓冲层，再满粘一条350mm宽的卷材防水层，节点细部裂缝的处理方法同上。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">3、女儿墙根部漏水</view>
+		<view>1、现象：</view>
+		<view>防水层沿女儿墙根部阴角空鼓、裂缝，女儿墙砌体裂缝，压顶裂缝，山墙被推出墙面，雨水从缝隙中灌人内墙。</view>
+		<view>2、原因分析：</view>
+		<view>找平层、刚性防水层等施工时直接靠紧女儿墙，不留分格缝，长条女儿墙砌体没有留伸缩缝，在温差作用下，山墙和女儿墙开裂;女儿墙等根部阴角没有按规定做圆弧，铺卷材防水层没有按规定做缓冲层，卷材端边的收头密封不好，导致裂缝、张口而渗漏水。</view>
+		<view>3、防治措施：</view>
+		<view>施工屋面找平层和刚性防水层时，在女儿墙交接处应留30mm的分格缝，缝中嵌填柔性密封膏;女儿墙根部的阴角粉成圆弧，女儿墙高度大于
+			800mm时，要留凹槽，卷材端部应裁齐压入预留凹槽内，钉牢后用水泥砂浆或密封材料将凹槽嵌填严实。女儿墙高度低于800mm时，卷材端头直接铺贴到女儿墙顶面，再做钢筋混凝土压顶。
+			屋面找平层或刚性防水层紧靠女儿墙，未留分格缝时，要沿女儿墙边切割出20～30mm宽的槽，扫刷干净，槽内嵌填柔性密封膏，女儿墙体有裂缝，要用灌浆材料修补，如山墙的女儿墙已凸出墙面时，须拆除后重砌，对卷材收头的张口应修补密封严实。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">4、天沟、檐沟漏水</view>
+		<view>1、现象：</view>
+		<view>沿沟底或预制檐沟的接头处，屋面与天沟交接处裂缝，沟底渗漏水。</view>
+		<view>2、原因分析：</view>
+		<view>天沟、檐沟的结构变形，温差变形导致裂缝，防水构造层不符合要求，水落口杯直径太小或堵塞造成溢水、漏水。</view>
+		<view>3、防治措施：</view>
+		<view>沟内防水层施工前，先检查预制天沟的接头和屋面基层结合处的灌缝是否严密和平整，水落口杯要安装好，排水坡度不宜小于
+			1%，沟底阴角要抹成圆弧，转角处阳角要抹成钝角，用与卷材同性质的涂膜做防水增强层，沟与屋面交接处空铺宽为200mm的卷材条，防水卷材必须铺到天沟外邦顶面。
+			　　天沟、檐沟出现裂缝，要将裂缝处的防水层割开，将基层裂缝处凿成“V”形槽，上口宽20mm，并扫刷干净，再嵌填柔性密封膏，在缝上空铺宽200mm的卷材条作缓冲层，然后满粘贴宽350mm的卷材防水层。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">5、变形缝漏水</view>
+		<view>1、现象：</view>
+		<view>沿变形缝根部裂缝及缝上封盖处漏水。</view>
+		<view>2、原因分析：</view>
+		<view>变形缝细部构造不当，根部阴角没有做圆弧和防水附加层，顶面封盖没有做缓冲层，封盖拉裂后破坏致使防水层出现渗漏水。</view>
+		<view>3、防治措施：</view>
+		<view>检查抹灰质量和干燥程度，扫刷干净，在根部铺一层附加层，附加卷材宽300mm，卷材上端要粘牢固(其余为空铺)，在立墙和顶面，卷材要满粘贴，墙顶面盖一条与墙面同宽的卷材，贴好一面后，缝中嵌入衬垫材料，再贴好另一面，上面再覆盖一层卷材，卷材比墙外两边宽200mm，覆盖后粘牢，用现浇或预制钢筋混凝土盖板扣压牢固，预制盖板的接缝用密封膏嵌填密实。
+			变形缝墙根部出现裂缝而渗漏水，要将裂缝处的卷材割开，基层扩缝后，嵌填防水密封膏，空铺卷材条后，再将原防水层修补、加强粘贴好;变形缝墙顶面卷材拉裂或破损时，应将混凝土盖板取下，重新修复。</view>
+		<view class="text-lg text-bold" style="font-size: 16px;margin: 20rpx 0;text-indent: 0;">6、水落口漏水</view>
+		<view>1、现象：</view>
+		<view>沿水落口周围漏水，有的水落口面高于防水层而积水，或因水落口小，堵塞而溢水。</view>
+		<view>2、原因分析：</view>
+		<view>水落口杯安装的高度高于基层，水落口杯与结构层接触处没有堵嵌密实，横式穿墙水落口与墙体之间的空隙，没有用砂浆填嵌严实，没有做防水附加层，防水层没有伸入水落口杯内的一定距离，造成雨水沿水落口外侧与水泥砂浆的接缝处渗漏水。</view>
+		<view>3、防治措施：</view>
+		<view>现浇天沟的直式水落口杯，要先安装在模板上，方可浇筑混凝土，沿杯边捣固密实。预制天沟，水落口杯安装好后要托好杯管周的底模板。用配合比为1：2：2的水泥、砂、细石子混凝土灌筑捣实，沿杯壁与天沟结合处上面留20mm×20mm的凹槽并嵌填密封材料，水落口杯顶面不应高于天沟找平层。
+			水落口的附加卷材粘贴方法：裁一条宽大于或等于250mm，长为水落口内径加100mm的卷材卷成圆筒，伸入水落口内100mm粘贴牢固，露出水落口外的卷材剪成30mm宽的小条外翻，粘贴在水落口外周围的平面上，再剪一块直径比水落口杯内径大200mm的卷材，居中按水落口杯内径剪成米字形，涂胶贴牢，将米字条向口内下插贴牢，然后再铺贴大面防水层。</view>
+		<view style="text-indent: 0;">来源：中通防水</view>
+	</view>
+</view>
+<view style="width: 100%;font-size: 16px;padding: 0 30rpx;font-weight: bold;" class="text-blue">
+	防水推荐
+</view>
+<view class="tuijian">
+	<image src="../../../public/img/index_img/640.gif"></image>
+	<view style="width: 100%;color: #999;text-align: right;padding: 0 30rpx;">广告：飞翎防水</view>
+</view>

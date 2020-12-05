@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///D:/taocai-uniapp/main.js"],"names":["createPage","Page"],"mappings":";;;;wEAAA,qBACA,sBACA,gD,mDACAA,EAAWC,a","file":"pages/stepline/stepline.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/stepline/stepline.vue'\ncreatePage(Page)"],"sourceRoot":""}

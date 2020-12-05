@@ -1,0 +1,23 @@
+.row-img{
+  height: 240rpx!important;
+  border-radius: 10rpx
+}
+.row-info{
+  display: block!important;
+}
+.searchInput{
+	width: 500rpx;
+	/* position: fixed; */
+	/* top: 40rpx;
+	height: 88rpx; */
+	left: 60rpx;
+	z-index: 9999;
+}
+.scrolltop{
+	/* position: fixed;
+	width: 100%;
+	top: 120rpx;
+	z-index: 1024; */
+	/* box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1); */
+
+}

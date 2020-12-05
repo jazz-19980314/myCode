@@ -1,0 +1,90 @@
+/* pages/product/comments/index.wxss */
+.content{
+	width: 100%;
+	padding: 40rpx 30rpx;
+}
+.condetail{
+	/* height: 400rpx; */
+	width: 100%;
+	padding: 20rpx 0;
+	margin-bottom: 30rpx;
+	border-bottom: 1px solid rgba(234,234,234,1);
+}
+.cd-title{
+	width: 100%;
+	height: 100rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cd-title image{
+	width: 52rpx;
+	height: 52rpx;
+}
+.cd-left{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.cd-name{
+	font-size:14px;
+	/* font-family:PingFangSC-Regular,PingFang SC; */
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	margin-left: 10rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: left;
+}
+.cd-name text{
+	width: 100%;
+	height: 40rpx;
+}
+.cd-name image{
+	width: 116rpx;
+	height: 20rpx;
+}
+.cd-date{
+	font-size:12px;
+	/* font-family:PingFangSC-Regular,PingFang SC; */
+	font-weight:400;
+	color:rgba(102,102,102,1);
+}
+.cd-info{
+	width: 100%;
+	/* height: 144rpx; */
+	font-size:12px;
+	/* font-family:PingFangSC-Regular,PingFang SC; */
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	line-height:18px;
+	margin: 30rpx 0;
+}
+.cd-bussname{
+	width: 100%;
+	height: 72rpx;
+	font-size:12px;
+	/* font-family:PingFangSC-Regular,PingFang SC; */
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	line-height:18px;
+}
+.shoptime{
+	width: 100%;
+	font-size:12px;
+	/* font-family:PingFangSC-Regular,PingFang SC; */
+	font-weight:400;
+	color:rgba(102,102,102,1);
+	line-height:17px;
+	margin-top: 20rpx;
+}
+.cd-imagebox{
+	width: 100%;
+	height: 480rpx;
+}
+.cd-imagebox image{
+	width: 440rpx;
+	height: 440rpx;
+}

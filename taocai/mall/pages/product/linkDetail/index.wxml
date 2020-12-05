@@ -1,0 +1,206 @@
+<!--pages/product/linkDetail/index.wxml-->
+<image style="width: 100%;" mode="widthFix" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/3c8b9729-5be8-4d9e-8ef5-bb10e8e60b8e.png"></image>
+<view class="com_1">
+	<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1278135614872752128/material/2aed9adc-39d1-4187-b11f-adb1e61cf7e6.png" mode="widthFix" style="width: 100%;display:block;"></image>
+	<view class="com_2" style="position: relative;">
+		<!-- <view style="background: url('https://qtvedio.oss-cn-qingdao.aliyuncs.com/1278135614872752128/material/11c7127c-6961-4c79-834f-51673871b793.png') no-repeat;background-size: 100% 100%;">
+			AI设计
+		</view> -->
+		<view>AI设计</view>
+		<view>网站设计</view>
+		<view>移动设计</view>
+		<view style="border-right:none;">交互设计</view>
+		<image style="position: absolute;bottom: 0;left: 0;width: 25%;height: 60rpx;" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1278135614872752128/material/11c7127c-6961-4c79-834f-51673871b793.png"></image>
+	</view>
+</view>
+<view class="com_3">
+	<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/20511551-aa1d-4d14-b196-f96d27ed8ca5.png"></image>
+	<view class="title_1">最新发布</view>
+	<view class="cont_1">企业增长遇难题？中科新软—你遇到了什么问题</view>
+	<text class="cuIcon-right" style="color:rgba(151, 155, 164, 1);"></text>
+</view>
+<view class="com_3">
+	<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/c51fc985-fef7-4c49-b724-99c5e60a7073.png"></image>
+	<view class="title_1">人工智能</view>
+	<view class="cont_1">企业增长遇难题？中科新软—你遇到了什么问题</view>
+	<text class="cuIcon-right" style="color:rgba(151, 155, 164, 1);"></text>
+</view>
+<view class="com_3">
+	<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/232c23ff-8210-4117-830a-229063b99fa8.png"></image>
+	<view class="title_1">热点资讯</view>
+	<view class="cont_1">企业增长遇难题？中科新软—你遇到了什么问题</view>
+	<text class="cuIcon-right" style="color:rgba(151, 155, 164, 1);"></text>
+</view>
+<view class="bgc">
+<view class="com_4">
+	<view class="title_2">数字化服务项目</view>
+	<view class="cont_2">运用数字科技服务建材和实体产业，助力各行业降低成本、提升效率、模式升级，和客户一起携手跨越、重塑增长</view>
+</view>
+<view class="com_5">
+	<text style="color:#2C68FF;border-bottom:2px solid #2C68FF;">通用</text>
+	<text>建材</text>
+	<text>建筑</text>
+	<text>电子商务</text>
+	<text>教育</text>
+	<text>金融</text>
+</view>
+</view>
+<!-- <view style="" class="com_6"></view> -->
+<view class="com_7">
+	<view class="com_8">
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/0db2349f-bc78-4e3d-947f-b8aeb370fb15.png"></image>
+		<view>智能签收</view>
+		<view class="cont_3">
+			实现线下签收标准化和线上数据价值化
+		</view>
+	</view>
+	<view class="com_8">
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/a99e175d-3a8f-4b8f-86ee-40811869c905.png"></image>
+		<view>智能区块链</view>
+		<view class="cont_3">
+			助力企业进行防伪管理和全供应链可视化管理
+		</view>
+	</view>
+	<view class="com_8">
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/4655b181-5b02-4ced-9e73-d13f6eaebb3c.png"></image>
+		<view>智能客服</view>
+		<view class="cont_3">
+			为各行业提供一体化的智能客服解决方案
+		</view>
+	</view>
+	<view class="com_8">
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/96ee5b3c-f192-4bbf-a41f-c8eb856b2542.png"></image>
+		<view>VHUB办公场景</view>
+		<view class="cont_3">
+			深度聚焦企业会议场景的数字化升级方案
+		</view>
+	</view>
+	<view class="com_8">
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/d30f9fe2-73c7-4bb2-91de-4056907258fd.png"></image>
+		<view>企业级</view>
+		<view class="cont_3">
+			为各行业提供提供全方位行业数据解决方案
+		</view>
+	</view>
+	<view class="com_8">
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/9e000815-c6f5-423a-b589-5d9b64c5da64.png"></image>
+		<view>智能楼宇人员管理</view>
+		<view class="cont_3">
+			以计算机视觉技术提升考勤和人员管理效率
+		</view>
+	</view>
+</view>
+<view class="com_9">
+	<view class="com_10">
+		<view style="width:45%;">
+			<view class="title_3">
+				数字化产品
+			</view>
+			<view class="cont_4">
+				中科新软人工智能有限科技公司以人工智能、大数据、区块链等时代前沿技术为基础，开发多种产品为企业创造更大的价值。
+			</view>
+		</view>
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/1ebf7221-05f5-4797-a421-23744380bbdd.png"></image>
+	</view>
+	<view class="com_11">
+		<view style="background:#FFF;color:#2C68FF;">电商类型</view>
+		<view>工程类型</view>
+		<view>教育类型</view>
+		<view>办公OA</view>
+	</view>
+	<view class="com_12">
+		<view class="com_13">
+			<view>数商云贸</view>
+			<view class="cont_5">
+				采用大型分布式架构方案、基于大数据分析与云计算技术
+			</view>
+		</view>
+		<view class="com_13">
+			<view>数商云贸</view>
+			<view class="cont_5">
+				采用大型分布式架构方案、基于大数据分析与云计算技术
+			</view>
+		</view>
+		<view class="com_13">
+			<view>数商云贸</view>
+			<view class="cont_5">
+				采用大型分布式架构方案、基于大数据分析与云计算技术
+			</view>
+		</view>
+		<view class="com_13">
+			<view>数商云贸</view>
+			<view class="cont_5">
+				采用大型分布式架构方案、基于大数据分析与云计算技术
+			</view>
+		</view>
+		<view class="com_13">
+			<view>数商云贸</view>
+			<view class="cont_5">
+				采用大型分布式架构方案、基于大数据分析与云计算技术
+			</view>
+		</view>
+		<view class="com_13">
+			<view>数商云贸</view>
+			<view class="cont_5">
+				采用大型分布式架构方案、基于大数据分析与云计算技术
+			</view>
+		</view>
+	</view>
+</view>
+<view class="com_14">
+	<view class="title_4">关于我们</view>
+	<view class="cont_6">
+		最懂产业数字化转型的专家和客户伙伴，用专业完成客户托付
+	</view>
+	<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1278135614872752128/material/e39ffe14-bfd5-42c8-8938-86a4919af982.png"></image>
+</view>
+<view class="com_15">
+	<view style="font-size:14px;color:#000;font-weight:bold;text-align:center;">
+	中科新软人工智能有限科技公司
+	</view>
+	<view>中科新软人工智能有限科技公司是融合大数据分析与“互联网+政务”技术的高科技企业，致力于以帮助政府和企业实现数据驱动决策。</view>
+
+	<!-- <view>安徽省中科志远有限公司是融合大数据分析与“互联网+政务”技术的高科技企业，致力于以帮助政府和企业实现数据驱动决策。</view> -->
+</view>
+<view class="com_16">
+	<view class="title_5">新软动态</view>
+	<view class="com_17">
+		<view class="com_18">
+			<view class="com_19">
+				企业增长遇难题？中科新软—你的首席增长官来了！
+			</view>
+			<view class="com_20">
+				中科新软 / 2020-07-16
+			</view>
+		</view>
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/eaabcca9-9f7c-4f92-8e61-72cf3f8dafbe.png"></image>
+	</view>
+	<view class="com_17">
+		<view class="com_18">
+			<view class="com_19">
+				企业增长遇难题？中科新软—你的首席增长官来了！
+			</view>
+			<view class="com_20">
+				中科新软 / 2020-07-16
+			</view>
+		</view>
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1288107384115564544/material/390925b1-010c-4258-b11d-b5d09678ab30.png"></image>
+	</view>
+	<view class="com_17">
+		<view class="com_18">
+			<view class="com_19">
+				企业增长遇难题？中科新软—你的首席增长官来了！
+			</view>
+			<view class="com_20">
+				中科新软 / 2020-07-16
+			</view>
+		</view>
+		<image src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1288107384115564544/material/114a5bec-935a-4721-b3b2-a26169bb1879.png"></image>
+	</view>
+	<view class="com_21">
+		更多新闻
+	</view>
+	<image class="com_img" src="https://qtvedio.oss-cn-qingdao.aliyuncs.com/1286144732258635776/material/af5da8b1-3bca-477b-94ae-cf1f118d4c50.png"></image>
+	<view class="com_22">中科新软人工智能有限科技公司</view>
+	<view class="com_22">版权所有：@cmcczhongkexinyuan</view>
+</view>

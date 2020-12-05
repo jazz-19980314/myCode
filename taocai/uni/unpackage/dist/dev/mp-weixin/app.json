@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/center/center",
+    "pages/sharemodule/sharemodule",
+    "pages/mallmanagement/mallmanagement",
+    "pages/quotationcenter/quotationcenter",
+    "pages/filloffer/filloffer",
+    "pages/offerdetail/offerdetail",
+    "pages/infoselect/infoselect",
+    "pages/offersuccess/offersuccess",
+    "pages/ordercenter/ordercenter",
+    "pages/applymoney/applymoney",
+    "pages/applysuccess/applysuccess",
+    "pages/orderdetail/orderdetail",
+    "pages/signpicture/signpicture",
+    "pages/moneydeclre/moneydeclre",
+    "pages/test/test",
+    "pages/goodsmanage/management/management",
+    "pages/goodsmanage/goodschange/goodschange",
+    "pages/goodsmanage/postsuccess/postsuccess",
+    "pages/goodsmanage/postgoods/postgoods",
+    "pages/goodsmanage/setting/setting",
+    "pages/goodsmanage/fahuomanage/fahuomanage",
+    "pages/goodsmanage/bankmanage/bankmanage",
+    "pages/goodsmanage/editInfo/editInfo",
+    "pages/changeoffer/changeoffer",
+    "pages/goodsmanage/comments/comments",
+    "pages/goodsmanage/shopuser/shopuser",
+    "pages/goodsmanage/addnotice/addnotice",
+    "pages/goodsmanage/helpcenter/helpcenter",
+    "pages/goodsmanage/changenotice/changenotice"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0D80F7",
+    "borderStyle": "black",
+    "backgroundColor": "#FCFCFC",
+    "iconWidth": "10px",
+    "list": [
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabbar/4-2.png",
+        "selectedIconPath": "static/tabbar/4.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/sharemodule/sharemodule",
+        "iconPath": "static/tabbar/2-2@3x.png",
+        "selectedIconPath": "static/tabbar/2@3x.png",
+        "text": "分润模块"
+      },
+      {
+        "pagePath": "pages/mallmanagement/mallmanagement",
+        "iconPath": "static/tabbar/3-2@3x.png",
+        "selectedIconPath": "static/tabbar/3@3x.png",
+        "text": "商城管理"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "lb-picker": "/components/lb-picker/index"
+  }
+}

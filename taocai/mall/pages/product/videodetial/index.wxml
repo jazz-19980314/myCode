@@ -1,0 +1,62 @@
+<!--pages/product/videodetial/index.wxml-->
+<!-- 视频标题 -->
+<view style="width: 100%;" wx:if="{{list.videoUrls[currentIndex]}}">
+	<!-- <view class="video-title">
+		<view class="vt-top">
+			{{list.content}}
+		</view>
+	</view> -->
+	<view class="video">
+		<text>05:24</text>
+		<video
+		      id="myVideo" 
+		      src="{{list.videoUrls[currentIndex]}}" 
+		      binderror="videoErrorCallback" 
+		      show-center-play-btn='{{true}}' 
+		      show-play-btn="{{true}}" 
+		      controls
+			  object-fit = "fill"
+			  enable-play-gesture = "{{true}}"
+			  vslide-gesture-in-fullscreen = "{{true}}"
+		      picture-in-picture-mode="{{['push', 'pop']}}"
+		      bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+		      bindleavepictureinpicture='bindVideoLeavePictureInPicture'
+		   ></video>
+	</view>
+	<view class="vt-bot">
+		<view class="vt-hot">
+			热门精选
+			<text>{{list.updateTime}}</text>
+		</view>
+		<view>672人观看</view>
+	</view>
+</view>
+<import src="/public/wxParse/wxParse.wxml"/>
+ <view class="bg-white" style="padding: 20rpx;">
+   <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+ </view>
+<!-- 产品推荐 -->
+<!-- <view class="video-recommend">
+	<view class="recommend-title">
+		相关产品推荐
+	</view>
+	<view class="vr-detail" wx:for="{{list}}" wx:key="index">
+		<view class="vr-left" bindtap = "enterdatail">
+			<view class="vr-title">
+				{{item.content}}
+			</view>
+			<view class="vr-time">
+				{{item.rename}}
+				<text>{{item.date}}</text>
+			</view>
+		</view>
+		<view class="vr-image">
+			<image src="{{item.videourl}}"></image>
+			<image src="../../../public/img/index_img/sp_2@2x.png" class="vr-play"></image>
+			<text>{{item.viewsnumber}}观看</text>
+		</view>
+	</view>
+	<view class="bottominfo">
+		没有更多数据啦
+	</view>
+</view> -->

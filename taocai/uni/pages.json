@@ -1,0 +1,131 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/center/center",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/sharemodule/sharemodule",
+			"style": {
+				"navigationBarTitleText": "分润模块"
+			}
+		}, {
+			"path": "pages/mallmanagement/mallmanagement",
+			"style": {
+				"navigationBarTitleText": "商城管理"
+			}
+		}, {
+			"path": "pages/quotationcenter/quotationcenter" //报价中心
+		}, {
+			"path": "pages/filloffer/filloffer" //报价填写
+		}, {
+			"path": "pages/offerdetail/offerdetail" // 报价详情
+		}, {
+			"path": "pages/infoselect/infoselect" //报价选择
+		}, {
+			"path": "pages/offersuccess/offersuccess" //报价成功
+		}, {
+			"path": "pages/ordercenter/ordercenter" //订单中心
+		}, {
+			"path": "pages/applymoney/applymoney" //
+		}, {
+			"path": "pages/applysuccess/applysuccess" //支付成功
+		}, {
+			"path": "pages/orderdetail/orderdetail" // 结款详情
+		}, {
+			"path": "pages/signpicture/signpicture" //签收照片
+		}, {
+			"path": "pages/moneydeclre/moneydeclre" //资金结算
+		}, {
+			"path": "pages/test/test" //测试页面
+		}, {
+			"path": "pages/goodsmanage/management/management" //商品管理
+		}, {
+			"path": "pages/goodsmanage/goodschange/goodschange" //编辑商品
+		}, {
+			"path": "pages/goodsmanage/postsuccess/postsuccess"// 上架成功
+		}, {
+			"path": "pages/goodsmanage/postgoods/postgoods"
+		}
+	    ,{
+            "path" : "pages/goodsmanage/setting/setting",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/fahuomanage/fahuomanage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/bankmanage/bankmanage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/editInfo/editInfo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/changeoffer/changeoffer",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/comments/comments",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/shopuser/shopuser",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/addnotice/addnotice",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/helpcenter/helpcenter",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsmanage/changenotice/changenotice",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#0D80F7",
+		"borderStyle": "black",
+		"backgroundColor": "#FCFCFC",
+		"iconWidth":"10px",
+		"list": [{
+			"pagePath": "pages/center/center",
+			"iconPath": "static/tabbar/4-2.png",
+			"selectedIconPath": "static/tabbar/4.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/sharemodule/sharemodule",
+			"iconPath": "static/tabbar/2-2@3x.png",
+			"selectedIconPath": "static/tabbar/2@3x.png",
+			"text": "分润模块"
+		}, {
+			"pagePath": "pages/mallmanagement/mallmanagement",
+			"iconPath": "static/tabbar/3-2@3x.png",
+			"selectedIconPath": "static/tabbar/3@3x.png",
+			"text": "商城管理"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"window": {
+	    "onReachBottomDistance": 300
+	  }
+}

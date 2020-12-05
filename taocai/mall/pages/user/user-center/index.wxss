@@ -1,0 +1,332 @@
+/**index.wxss**/
+.maincontainer {
+	background: rgba(244, 245, 246, 1);
+	padding-top: 104rpx;
+}
+.centerTitle{
+	position: fixed;
+	font-size: 18px;
+	color: #fff;
+	/* top: 60rpx; */
+	left: 50%;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+.banner{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.userinfoss{
+	width:690rpx;
+	height:302rpx;
+	margin: 0 auto;
+	background-color: var(--white);
+	border-radius:6px;
+}
+/* 大盒子 */
+.cu-list.menu-avatar {
+	width: 100%;
+	height: 160rpx;
+	border-radius: 5px;
+	padding: 30rpx 30rpx 0 30rpx;
+}
+
+.cu-list.menu-avatar>.cu-item {
+	height: 100%;
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.cu-list.menu-avatar>.cu-item>.cu-avatar {
+	width: 100rpx;
+	height: 100rpx;
+	left: 0px !important;
+}
+
+/* 头像 */
+.tx-image {
+	height: 100rpx;
+	width: 100rpx;
+	border-radius: 50%;
+}
+
+/* 用户名盒子 */
+.cu-list.menu-avatar>.cu-item .content {
+	/* left: 200rpx; */
+}
+
+.cu-list.menu-avatar>.cu-item .content button {
+	color: rgba(231, 52, 35, 1);
+}
+
+.cu-list.menu-avatar>.cu-item .content>.text-black {
+	width: 248rpx;
+	height: 44rpx;
+	font-size: 32rpx;
+	font-weight: 500;
+	color: rgba(51, 51, 51, 1);
+	line-height: 44rpx;
+	margin-bottom: 10rpx;
+}
+
+.cu-btn.sm {
+	width: 144rpx;
+	height: 36rpx;
+	border-radius: 18rpx;
+	font-size: 10px;
+	font-weight: 400;
+	color: #408DF3;
+	line-height: 36rpx;
+}
+
+/* 设置按钮 */
+.cu-list.menu-avatar>.cu-item .action {
+	height: 160rpx;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-left: 80rpx;
+}
+
+.icon-setting {
+	height: 36rpx;
+	width: 36rpx;
+}
+
+/* 用户导航 */
+.cu-list.grid.nav-list {
+	background-color: none;
+}
+
+.kefu {
+	border: none !important;
+	text-align: center;
+	line-height: 40rpx;
+	height: 40rpx;
+	font-size: 12px !important;
+	padding: 0 !important;
+	color: #888 !important;
+}
+
+.icon-setting {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 6rpx;
+}
+
+.icon-right {
+	position: absolute;
+	right: 6rpx;
+	top: 66rpx;
+}
+
+.icon_dh {
+	width: 48rpx;
+	height: 48rpx;
+}
+
+.myorderlist {
+	box-shadow: -2px -2px 4px 0px rgba(255, 221, 218, 0.4), 2px 2px 4px 0px rgba(205, 18, 0, 0.15);
+	margin-top: 50rpx !important;
+}
+
+/* 我的订单 */
+.cu-bar .action.myorder,
+.cu-bar .action.myquesorder {
+	font-size: 32rpx;
+	/* font-family: PingFangSC-Medium, PingFang SC; */
+	font-weight: 500;
+	color: rgba(51, 51, 51, 1);
+	margin-left: 0;
+}
+
+/* 全部订单 */
+.cu-bar .action.allorder {
+	height: 34rpx;
+	font-size: 24rpx;
+	/* font-family: PingFangSC-Regular, PingFang SC; */
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+	line-height: 34rpx;
+}
+
+.goodsImage {
+	height: 80rpx;
+	width: 80rpx;
+}
+
+.solid-bottom {
+	height: 104rpx;
+	line-height: 104rpx;
+	padding-left: 56rpx;
+	position: relative;
+	border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+.solid-bottom .icon-bg {
+	width: 3px;
+	height: 20px;
+	background: rgba(231, 52, 35, 1);
+	border-radius: 4rpx;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 30rpx;
+}
+
+/* 商品订单和信息盒子 */
+.goodsOrder {
+	width: 690rpxpx;
+	height: 384rpx;
+	background: #fff;
+	border-radius: 4px;
+	padding-top: 60rpx;
+}
+
+.basicInfo {
+	width: 650rpx;
+	height: 160rpx;
+	background: rgba(245, 246, 247, 1);
+	border-radius: 4px;
+	margin: 40rpx auto;
+	padding: 20rpx;
+}
+
+.basicInfo .bi-top {
+	width: 100%;
+	height: 28rpx;
+	font-size: 10px;
+	/* font-family: PingFangSC-Medium, PingFang SC; */
+	font-weight: 500;
+	color: rgba(153, 153, 153, 1);
+	line-height: 28rpx;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bi-btm {
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+	/* font-family: PingFangSC-Regular, PingFang SC; */
+	font-weight: 400;
+	margin-top: 10rpx;
+}
+
+.goodsImage image {
+	height: 80rpx;
+	width: 80rpx;
+}
+
+.basicright {
+	/* display: flex; */
+	width: 520rpx;
+	color: rgba(153, 153, 153, 1);
+	margin-left: 20rpx;
+}
+
+.basicright .bir-t {
+	height: 30rpx;
+	color: #49BF5A;
+	line-height: 30rpx;
+	margin-bottom: 12rpx;
+	position: relative;
+	padding-left: 40rpx;
+}
+
+.basicright .bir-t image {
+	width: 30rpx;
+	height: 30rpx;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.basicright .bir-b {
+	width: 100%;
+	height: 34rpx;
+	text-align: left;
+	line-height: 34rpx;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* 订单流程 */
+.orderstep {
+	width: 650rpx;
+	height: 128rpx;
+	border: 1px solid;
+	border-image: -webkit-linear-gradient(180deg, #AFDAFA, #408DF3) 30 30;
+	margin: 0 auto;
+}
+
+/* 边框 */
+.stepbox {
+	position: relative;
+}
+
+.border-image {
+	width: 12rpx;
+	height: 124rpx;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.jiantou-image {
+	width: 50rpx;
+	height: 25rpx;
+	position: absolute;
+	top: 10rpx;
+	right: -25rpx;
+}
+
+/* 询价订单 */
+.questionOrder {
+	width: 690rpxpx;
+	height: 266rpx;
+	background: rgba(230, 240, 255, 1);
+	border-radius: 4px;
+	padding-top: 20rpx;
+}
+
+/* 流程按钮 */
+.icon_order {
+	height: 118rpx;
+	width: 90rpx;
+}
+
+/* 询价按钮 */
+.icon_askprice {
+	height: 40rpx;
+	width: 40rpx;
+}
+
+.icon-fahuo {
+	width: 46rpx;
+	height: 38rpx;
+}
+
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userinfo-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+
+.userinfo-nickname {
+	color: #aaa;
+}
+
+.usermotto {
+	margin-top: 200px;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon_sfcg</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02报价中心-1-2报价信息选择" transform="translate(-123.000000, -375.000000)">
+            <g id="编组-10" transform="translate(30.000000, 349.000000)">
+                <g id="icon_sfcg" transform="translate(93.000000, 26.000000)">
+                    <circle id="椭圆形" fill="#67C23A" cx="8" cy="8" r="8"></circle>
+                    <g id="成功" transform="translate(3.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M3.40652293,6.59794571 L0.307639866,3.49906264 L0.307639877,3.49906265 C0.175147261,3.36645516 0.175240687,3.15154878 0.30784828,3.01905685 C0.440455775,2.88656423 0.655362159,2.88665766 0.787854083,3.01926525 L3.64663356,5.87762258 L9.2166217,0.307634439 L9.2166217,0.307634441 C9.34922919,0.175026946 9.56422831,0.175026946 9.6968365,0.307634438 C9.82944399,0.440241933 9.82944399,0.65524105 9.6968365,0.787849237 L3.88632262,6.59794789 L3.88632262,6.59794789 C3.75386668,6.73013532 3.53939767,6.73013532 3.40694173,6.5979479 L3.40652293,6.59794571 Z" id="路径"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
