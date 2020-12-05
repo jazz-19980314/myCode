@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "公司信息录入",
-  "usingComponents": {
-    "pickers": "/components/ming-picker/ming-picker",
-    "bpickers": "/components/ming-picker/bussise-picker"
-  }
-}
